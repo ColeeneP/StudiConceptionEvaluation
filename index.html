@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Web page CSS -->
+    <link rel="stylesheet" href="assets/css/styles.css" />
+
+    <!-- Favicons
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="assets/icons/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="assets/icons/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="assets/icons/favicon-16x16.png"
+    /> -->
+
+    <title>Je sauve des vies</title>
+  </head>
+  <body>
+    <nav>
+        <a href="./index.html" class="logo">
+          <h1>
+            <img class="img-logo" src="assets/images/Republique-francaise-logo.svg.png" />
+          </h1>
+        </a>
+
+        
+        <ul>
+            <li class="nav-item" onclick="closeMenu()">
+              <a href="#campagne" class="nav-link">Campagne de vaccination</a>
+            </li>
+            <li class="nav-item" onclick="closeMenu()">
+              <a href="#vaccination" class="nav-link">La vaccination</a>
+            </li>
+            <li class="nav-item" onclick="closeMenu()">
+              <a href="#formulaire" class="nav-link">Je souhaite sauver des vies</a>
+            </li>
+            <li class="nav-item" onclick="closeMenu()">
+              <a href="./vaccination.html" class="nav-link">Trouver un centre</a>
+            </li>
+        </ul>
+
+        <div class="hamburger" id="hamburger" onclick="openMenu()">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+    </nav>
+
+    <section class="campagne" id="campagne">
+        <div class="intro-text">
+          <h1>
+            <span class="primary"> Campagne de </span> <br />
+            <span class="secondary"> Vaccination</span>
+          </h1>
+          <p>
+            <span class="secondary">Un vaccin qu'est-ce que c'est ?</span> <br />
+            Les vaccins stimulent le système immunitaire pour créer des anticorps, de la même manière que s’il était exposé à la maladie. 
+            Mais comme les vaccins ne renferment que des formes tuées ou atténuées des germes, 
+            virus ou bactéries, ils ne provoquent pas la maladie et n’exposent pas le sujet à des risques de complications.
+          </p> <br />
+          <p>
+            <span class="secondary">Pourquoi se faire vacciner ?</span>
+            Les deux raisons essentielles pour se faire vacciner sont de se protéger soi-même et de protéger son entourage. 
+            Comme on ne peut pas vacciner certaines personnes, les très jeunes nourrissons, ceux qui sont gravement malades ou ceux qui ont certaines allergies par exemple, 
+            elles dépendent de la vaccination des autres pour être protégées des maladies à prévention vaccinale.
+          </p>
+          <a class="btn red" href="https://www.who.int/fr/news-room/questions-and-answers/item/vaccines-and-immunization-what-is-vaccination?adgroupsurvey={adgroupsurvey}&gclid=CjwKCAiA_9r_BRBZEiwAHZ_v19x5bIct69jPzVD75Np-tzsTKjDWn3Ne_hi2DP8uPGDigZMrJkVTyxoCSGIQAvD_BwE">En savoir plus</a>
+          <a class="btn blue" href="#formulaire">Se faire vacciner</a>
+        </div>
+        <div class="i-frame">
+          <img
+            class="info-covid"
+            width="500"
+            height="315"
+            src="assets/images/Covid19.jpg"
+          />
+        </div>
+      </section>
+
+    <!-- campagne section -->
+    <section class="vaccination" id="vaccination">
+        <div class="intro-text">
+        <h3>
+            <span class="primary"> Stratégie </span>
+            <span class="secondary"> Vaccinale</span>
+        </h3>   
+        <h4>
+            <span class="secondary">Nos objectifs</span><br />
+        </h4>
+        <p>
+            Faire baisser la mortalité et les formes graves de la maladie<br />
+            Protéger les soignants et le système de soins <br />
+            Garantir la sécurité des vaccins et de la vaccination<br />
+        </p><br />
+        <h4>
+            <span class="secondary">Priorisation</span><br />
+        </h4>
+        <p>
+        Prioriser les populations cibles vaccinales en fonction de différentes <span class="primary">classes d’âge</span> et selon les <span class="primary">facteurs d’exposition</span> au virus.<br />
+        A tranche d’âge égale, les personnes souffrant de <span class="primary">comorbidités</span> associées à un risque de développer une forme grave de Covid-19 seront priorisées.
+        </p><br />
+        <a class="btn blue" href="https://solidarites-sante.gouv.fr/grands-dossiers/vaccin-covid-19/article/la-strategie-vaccinale">En savoir plus</a>
+    </div>
+   
+  </section>
+
+<section class="formulaire" id="formulaire">
+    <form action="#">
+        <h3><span class="secondary">Je souhaite me faire vacciner</span></h3>
+        <input type="nom" name="nom" id="nom-sub" class="sub" placeholder="Nom" required />    
+        <input type="prenom" name="prenom" id="prenom-sub" class="sub" placeholder="Prénom" required />  
+        <input type="email" name="email" id="email-sub" class="sub" placeholder="Email" required />
+        <input type="nosecu" name="nosecu" id="nosecu-sub" class="sub" placeholder="N° de sécurité sociale" required />
+        <input type="submit" value="S'inscrire" id="submit-btn" class="submit-btn" />
+    </form>
+</section>
+
+<footer>&copy;2022. All Rights Reserved</footer>
+
+<!-- Scroll to top button -->
+<i class="scroll-up" id="scroll-up"><img src="assets/icons/up-arrow.png" class="socicon up-arrow" alt="up-arrow" /></i>
+
+<script src="assets/js/script.js"></script>
+
+  </body>
+</html>
