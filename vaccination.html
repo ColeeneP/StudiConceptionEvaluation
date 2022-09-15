@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <!DOCTYPE html>
 <html lang="fr">
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -9,51 +9,28 @@
     <!-- Web page CSS -->
     <link rel="stylesheet" href="assets/css/styles.css" />
 
-    <!-- Simple lightbox CSS -->
-    <link rel="stylesheet" href="assets/css/simple-lightbox.min.css" />
+    <title>Je sauve des vies</title>
+  </head>
+  <body>
+    <nav>
+        <a href="./index.html" class="logo">
+          <h1>
+            <img class="img-logo" src="assets/images/Republique-francaise-logo.svg.png" />
+          </h1>
+        </a>
 
-    <!-- Favicons -->
-    <link
-      rel="apple-touch-icon"
-      sizes="180x180"
-      href="assets/icons/apple-touch-icon.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="32x32"
-      href="assets/icons/favicon-32x32.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="16x16"
-      href="assets/icons/favicon-16x16.png"
-    />
-    <title>Centres de vaccination</title>
-</head>
-<body>
-    <body>
-        <nav>
-            <a href="./index.html" class="logo">
-                <h1>
-                  <img class="img-logo" src="assets/images/Republique-francaise-logo.svg.png" />
-                  <!-- <span class="title">Tous Anti Covid</span> -->
-                </h1>
-              </a>
-    
-            <ul>
-                <li class="nav-item">
-                  <a href="./index.html" class="nav-link" id="nav-link">Accueil</a>
-                </li>
-            </ul>
-    
-            <div class="hamburger" id="hamburger">
-                <span class="bar"></span>
-                <span class="bar"></span>
-                <span class="bar"></span>
-            </div>
-        </nav>
+        <ul>
+            <li class="nav-item" onclick="closeMenu()">
+              <a href="./index.html" class="nav-link">Accueil</a>
+            </li>
+        </ul>
+
+        <div class="hamburger" id="hamburger" onclick="openMenu()">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+    </nav>
 
         <section class="formulaire" id="formulaire">
             <form action="#">
@@ -62,6 +39,13 @@
                 <input type="submit" value="Rechercher" id="submit-btn" class="submit-btn" />
             </form>
         </section>
+
+        <footer>&copy;2022. All Rights Reserved</footer>
+
+<!-- Scroll to top button -->
+<i class="scroll-up" id="scroll-up"><img src="assets/icons/up-arrow.png" class="socicon up-arrow" alt="up-arrow" /></i>
+
+<script src="assets/js/script.js"></script>
     
 </body>
 </html>

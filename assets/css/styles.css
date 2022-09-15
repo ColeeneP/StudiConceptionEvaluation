@@ -395,7 +395,7 @@ body.dark footer {
   }
 
   .campagne {
-    margin:  0 25px 0 25px;
+    margin: 25px;
   }
 
   ul {
@@ -436,7 +436,7 @@ body.dark footer {
 
 .vaccination {
   flex-direction: column;
-  height: 100vh;
+  margin-top: 80px;
   /* max-width: 500px; */
 }
 
